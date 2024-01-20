@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recetas de Encebollado</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        header, section, footer {
+            padding: 20px;
+            background-color: #f0f0f0;
+            border-bottom: 1px solid #ccc;
+            text-align: center;
+        }
+
+        .content {
+            display: none;
+        }
+
+        a {
+            text-decoration: none;
+            color: #333;
+            padding: 10px 20px;
+            margin: 0 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        img {
+            max-width: 60%; /* Reducción del tamaño de la imagen */
+            display: block;
+            margin: 20px auto; /* Centrar la imagen */
+        }
+    </style>
+    <script>
+        function showContent(sectionId) {
+            // Oculta todos los contenidos
+            var contents = document.getElementsByClassName('content');
+            for (var i = 0; i < contents.length; i++) {
+                contents[i].style.display = 'none';
+            }
+
+            // Muestra el contenido de la sección seleccionada
+            document.getElementById(sectionId).style.display = 'block';
+        }
+    </script>
+</head>
+<body>
+
+    <!-- Sección 1: Lugares de Ventas de Encebollado -->
+    <header>
+        <h1>Lugares de Ventas de Encebollado</h1>
+        <a onclick="showContent('ventas')">Ir a Lugares de Ventas</a>
+    </header>
+
+    <!-- Contenido de la Sección 1 -->
+    <div id="ventas" class="content">
+        <h1>Lugares de Ventas de Encebollado</h1>
+        <p>Descubre dónde puedes disfrutar del mejor encebollado en tu ciudad.</p>
+        <p>Recomendaciones de restaurantes de encebollados y mariscos:</p>
+        <ul>
+            <li>Encebollado de albacora Don Salse: 7/10</li>
+            <li>Encebollados El Arbolito: 8.5/10</li>
+            <li>Encebollados de Cristina: 8/10</li>
+            <li>Encebollados El Capitán: 9/10</li>
+            <li>Encebollados Doña Mary: 8/10</li>
+            <li>Encebollados Charlenin: 10/10</li>
+        </ul>
+        <img src="https://www.recetasnestle.com.ec/sites/default/files/srh_recipes/7ea4f3b2af8bb20231ff3c4f13e685ab.jpg" alt="Encebollado ecuatoriano">
+    </div>
+
+    <!-- Sección 2: Ingredientes y Explicación de los Ingredientes -->
+    <section>
+        <h2>Ingredientes</h2>
+        <a onclick="showContent('receta')">Ir a Ingredientes</a>
+    </section>
+
+    <!-- Contenido de la Sección 2 -->
+    <div id="receta" class="content">
+        <h1>Ingredientes del Encebollado</h1>
+        <img src="https://imag.bonviveur.com/ingredientes-del-encebollado-de-pescado-ecuatoriano.jpg" alt="Ingredientes del Encebollado ecuatoriano">
+        <p>Para preparar un delicioso encebollado necesitarás los siguientes ingredientes:</p>
+        <ul>
+            <li>Atún o pescado fresco</li>
+            <li>Yuca</li>
+            <li>Tomate</li>
+            <li>Cebolla</li>
+            <li>Cilantro</li>
+            <li>Achiote</li>
+            <li>Sal y pimienta al gusto</li>
+        </ul>
+        <p>Exploración detallada de cada ingrediente y su papel en la receta.</p>
+    </div>
+
+    <!-- Sección 3: Preparación del Encebollado -->
+    <section>
+        <h2>Preparación</h2>
+        <a onclick="showContent('preparacion')">Ir a Preparación</a>
+    </section>
+
+    <!-- Contenido de la Sección 3 -->
+    <div id="preparacion" class="content">
+        <h1>Preparación del Encebollado</h1>
+        <img src="https://imag.bonviveur.com/el-atun-desmigado-y-la-yuca-cortada-del-encebollado-de-pescado-ecuatoriano.jpg" alt="Preparación del Encebollado ecuatoriano">
+        <p>Descubre los pasos para preparar un delicioso encebollado:</p>
+        <ol>
+            <li>Limpia y corta los ingredientes.</li>
+            <li>Cocina el pescado y la yuca por separado.</li>
+            <li>Prepara el refrito de cebolla y tomate.</li>
+            <li>Mezcla todos los ingredientes y cocina a fuego lento.</li>
+            <li>Sirve caliente y disfruta con amigos y familia.</li>
+        </ol>
+    </div>
+
+</body>
+</html>
